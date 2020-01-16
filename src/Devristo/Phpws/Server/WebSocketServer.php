@@ -12,8 +12,8 @@ use Evenement\EventEmitter;
 use Exception;
 use React\EventLoop\LoopInterface;
 use SplObjectStorage;
-use Zend\Log\LoggerInterface;
-use Zend\Uri\Uri;
+use Laminas\Log\LoggerInterface;
+use Laminas\Uri\Uri;
 
 /**
  * WebSocketServer
@@ -61,7 +61,7 @@ class WebSocketServer extends EventEmitter
      *
      * @param $url
      * @param \React\EventLoop\LoopInterface $loop
-     * @param \Zend\Log\LoggerInterface $logger
+     * @param \Laminas\Log\LoggerInterface $logger
      * @throws \InvalidArgumentException
      */
     public function __construct($url, LoopInterface $loop, LoggerInterface $logger)
